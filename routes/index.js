@@ -8,7 +8,9 @@ router.get('/', (req, res) => {
   res.render('hello', {
     // these are called local variables
     name: 'Bob',
-    food: req.query.food
+    food: req.query.food,
+    // this will pass the title to the layout file
+    title: 'Some stuff here'
   });
 });
 
